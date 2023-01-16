@@ -217,6 +217,14 @@ button {
     }
 }
 
+@media screen and (min-width: 36em) and (min-height: 50em) {
+    .attribution {
+        position: fixed;
+        bottom: 0.325rem;
+        /* width: 100%;  */
+    }
+}
+
 .attribution {
     margin-block: 0.5rem;
     font-size: 0.735rem;

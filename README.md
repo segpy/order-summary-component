@@ -5,8 +5,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Order Summary Component (Mobile first + BEM) | Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-sass-mobile-first-bem-BlfUdr5oBv)
-- Live Site URL: [https://order-summary-component-melvinhdz.vercel.app/](https://order-summary-component-melvinhdz.vercel.app/)
+- Solution URL: [Order Summary Component (Mobile first + BEM) | Frontend Mentor]()
+- Live Site URL: [https://order-summary-component-melvinhdz.vercel.app/]()
 
 <br>
 

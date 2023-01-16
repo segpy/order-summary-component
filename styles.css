@@ -145,8 +145,10 @@ button {
         background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
         height: 50vh;
     }
+}
 
+@media (min-width: 400px){
     .container{
-        width: 50vw;
+        width: 400px;
     }
 }

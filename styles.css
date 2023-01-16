@@ -161,9 +161,6 @@ button {
 }
 
 @media screen and (max-width: 374px) {
-    /* .container div.pricing{
-        padding: 0;
-    } */
     .container div.pricing article.articleItem{
         margin-left: -1px;
     }
@@ -221,7 +218,6 @@ button {
     .attribution {
         position: fixed;
         bottom: 0.325rem;
-        /* width: 100%;  */
     }
 }
 

@@ -20,6 +20,7 @@ img {
 }
 
 body{
+    padding: 16px 25px;
     font-family: "Red Hat Display", sans-serif ;
     background-color: var(--pale-blue);
     text-align: center;
@@ -90,21 +91,28 @@ button {
     color: hsl(223, 47%, 23%);
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 25.125rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
 
+.card img.hero {
+    width: 100%;
+}
 
 .container {
     background-color: #fff;
-    margin: 20px;
-    border-radius: 15px;
     box-shadow: 2px 4px 10px hsl(224, 23%, 55%, 0.8);
-    overflow: hidden;
-    padding-bottom: 30px;
-    max-width: 25.125rem;
+    padding: 1.5rem;
+    text-align: center;
 }
 
-.container img.hero {
-    width: 100%;
-}
+
 
 .container div.pricing{
     margin: 20px auto;
@@ -117,12 +125,13 @@ button {
     justify-content: space-between;
 }
 
+
+
 .container div.pricing article.articleItem{
-    margin-left: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-left: 5px;
 }
 .container div.pricing article.articleItem img{
     margin-right: 5px ;
@@ -134,11 +143,33 @@ button {
 
 .container h1 {
     color: hsl(224, 51%, 19%);
-    margin: 25px auto;
 }
 .container p#container-p{
     margin: 10px auto;
-    padding: 0 25px;
+
+}
+
+@media screen and (max-width: 374px) {
+    /* .container div.pricing{
+        padding: 0;
+    } */
+    .container h1{
+        font-size: 1.35rem;
+    }
+    .container div.pricing article.articleItem{
+        margin-left: -1px;
+    }
+    .container div.pricing article.articleItem img{
+        margin:0;
+    } 
+    .articleItem div.details{
+        margin:0;
+    }
+
+    .container div.pricing{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 768px) {

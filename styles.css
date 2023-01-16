@@ -31,7 +31,7 @@ body{
 }
 
 p{
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     color: var(--desaturated-blue)
 }
@@ -99,6 +99,7 @@ button {
     box-shadow: 2px 4px 10px hsl(224, 23%, 55%, 0.8);
     overflow: hidden;
     padding-bottom: 30px;
+    max-width: 25.125rem;
 }
 
 .container img.hero {
@@ -144,11 +145,5 @@ button {
     .bg__image{
         background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
         height: 50vh;
-    }
-}
-
-@media (min-width: 400px){
-    .container{
-        width: 400px;
     }
 }

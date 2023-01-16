@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 :root{
-    --pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%);
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --desaturated-blue: hsl(224, 23%, 55%);
-    --dark-blue: hsl(223, 47%, 23%);
+    --pale-blue:
+    hsl(225, 100%, 94%);
+    --bright-blue:
+    hsl(245, 75%, 52%);
+    --very-pale-blue:
+    hsl(225, 100%, 98%);
+    --desaturated-blue:
+    hsl(224, 23%, 55%);
+    --dark-blue:
+    hsl(223, 47%, 23%);
 }
 
 *{
@@ -75,7 +80,7 @@ button {
     width: 90%;
     height: 50px;
     margin-bottom: 15px;
-    box-shadow: 1px 15px 10px hsl(224, 51%, 19%, 0.1);
+    box-shadow: 1px 15px 10px hsl(224, 51%, 19%, 0.3);
 }
 
 .btn-primary:hover, .btn-change:hover {
@@ -99,6 +104,7 @@ button {
     max-width: 25.125rem;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 2px 4px 10px hsl(224, 23%, 55%, 0.9);
 }
 
 .card img.hero {
@@ -107,7 +113,6 @@ button {
 
 .container {
     background-color: #fff;
-    box-shadow: 2px 4px 10px hsl(224, 23%, 55%, 0.8);
     padding: 1.5rem;
     text-align: center;
 }
@@ -149,13 +154,16 @@ button {
 
 }
 
+@media screen and (max-width:766px) {
+    .container h1{
+        font-size: 1.35rem;
+    }
+}
+
 @media screen and (max-width: 374px) {
     /* .container div.pricing{
         padding: 0;
     } */
-    .container h1{
-        font-size: 1.35rem;
-    }
     .container div.pricing article.articleItem{
         margin-left: -1px;
     }
@@ -172,9 +180,48 @@ button {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .bg__image{
         background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
         height: 50vh;
     }
+    .container h1{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .container div.pricing{
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 89.9375em){
+    .card {
+        max-width: 28.125rem;
+    }
+    .container{
+        padding: 2.5rem 2.95rem 2.95rem 2.95rem;
+    }
+    .container h1{
+        font-size: 1.75rem;
+        margin: 0;
+    }
+    .container p#container-p{
+        margin: 18px 0;
+    }
+    .container div.pricing{
+        padding: 24px;
+        margin: 0 auto;
+    }
+    .btn-primary{
+        margin: 30px 0;
+    }
+}
+
+.attribution {
+    margin-block: 0.5rem;
+    font-size: 0.735rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(245deg, 75%, 52%);
 }
